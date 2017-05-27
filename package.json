@@ -1,0 +1,11 @@
+{
+  "name": "xswx",
+  "version": "0.1.0",
+  "description": "学生们可以给老师和学校打分的一个网站",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "MasonChen",
+  "license": "MIT"
+}
