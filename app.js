@@ -8,9 +8,11 @@ var url = 'mongodb://localhost:27017/chihuo';
 MongoClient.connect(url, function(err, db) {
 	assert.equal(null, err);
 	console.log("Connected successfully to server");
-	insertDocuments(db, function() {
-		db.close();
-	});
+//	insertDocuments(db, function() {
+//		db.close();
+//	});
+
+
 //	findDocuments(db, function() {
 //		db.close();
 //	});
@@ -89,3 +91,10 @@ var indexCollection = function(db, callback) {
     }
   );
 };
+
+// 字段类型转换
+
+//db.schools.find({schoolid:{$type:2}}).forEach((x) => {
+//  x.schoolid = parseInt(x.schoolid);
+//  db.schools.save(x);
+//})

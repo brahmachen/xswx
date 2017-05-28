@@ -3,9 +3,9 @@ var Schema = mongoose.Schema;
 var ObjectId = Schema.ObjectId;
 
 var SchoolSchema = new Schema({
-    schoolid : String,
+    schoolid : Number,
     schoolname : String,
-    clicks : Number
+    clicks : Number,
     monthclicks : Number,
     weekclicks : Number,
     province : String,
